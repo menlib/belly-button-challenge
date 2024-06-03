@@ -63,7 +63,7 @@ function Metadata(sample){
         let array = metadata.filter(sampleOBJ => sampleOBJ.id == sample);
         let results = array[0];
 
-        let panel = d3.select('#sample-matadata').html('');
+        let panel = d3.select('#sample-metadata').html('');
 
         for (key in results){
             panel.append("h6").text(`${key.toUpperCase()}: ${results[key]}`);
